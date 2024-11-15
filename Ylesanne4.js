@@ -24,7 +24,9 @@ class Circle extends Shape {
     getArea(){
         return Math.PI* Math.pow(this.#radius, 2)
     } 
-
+    print(){
+        return `Circle (r:{$(this.#radius) } ), color:{$(this.getColor()) })  `
+    } 
 } 
 
 const shape1 = new Shape('red')
