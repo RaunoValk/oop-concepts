@@ -19,4 +19,4 @@ const student2 = new Student('Mary')
 student2.finished = true
 console.log(student1)
 console.log(student2)   
-
+console.log()
