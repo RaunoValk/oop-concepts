@@ -28,6 +28,19 @@ class Circle extends Shape {
         return `Circle (r:{$(this.#radius) } ), color:{$(this.getColor()) })  `
     } 
 } 
+class Square extends Circle{
+    #side
+    constructor(color, side){
+        super(color)
+        this.#side = side
+    } 
+    getArea(){
+        return this.#side * this.#side
+    } 
+    print(){
+        return `Square (a:{$(this.#side) } ), color:{$(this.getColor()) }) `
+    } 
+} 
 
 const shape1 = new Shape('red')
 console.log('shape color', shape1.getColor())
